@@ -25,7 +25,7 @@ class Calculadora(tk.Tk):
         entrada_frame.pack(side=tk.TOP)
         # Caja de Texto
         entrada = tk.Entry(entrada_frame, font=('arial', 18, 'bold'), 
-                    textvariable=self.entrada_texto, width=30, justify=tk.RIGHT)
+                    textvariable=self.entrada_texto, width=30, justify=tk.RIGHT, bg='#353535')
         entrada.grid(row=0, column=0, ipady=10)
         
         # Creamos otro frame para la parte inferior)
@@ -34,7 +34,7 @@ class Calculadora(tk.Tk):
         
         # Primer row
         boton_limpiar = tk.Button(botones_frame, text='Limpiar', width='38', height=3,
-                                    bd=0, bg='#eee', cursor='hand2', command=self._evento_limpiar)
+                                    bd=0, bg='#d9d9d9', cursor='hand2', command=self._evento_limpiar)
         boton_limpiar.grid(row=0, column=0, columnspan=3, padx=1, pady=1, sticky=tk.W+tk.E)
         boton_dividir = tk.Button(botones_frame, text='/', width='17', height=3, bd=0,
                                   bg='#eee', cursor='hand2', 
