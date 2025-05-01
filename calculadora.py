@@ -24,7 +24,7 @@ class Calculadora(tk.Tk):
         entrada_frame = tk.Frame(self, width=400, height=50, bg='grey')
         entrada_frame.pack(side=tk.TOP)
         # Caja de Texto
-        entrada = tk.Entry(entrada_frame, font=('arial', 18, 'bold'), 
+        entrada = tk.Entry(entrada_frame, font=('arial', 18, 'bold'), fg='white',
                     textvariable=self.entrada_texto, width=30, justify=tk.RIGHT, bg='#353535')
         entrada.grid(row=0, column=0, ipady=10)
         
